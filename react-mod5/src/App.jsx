@@ -1,7 +1,8 @@
-
+import Form from "./components/form/Form";
 function App() {
   return (
-    <h1>Oi</h1>
+    <Form/>
+
   );
 }
 
