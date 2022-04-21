@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import api from "../services/Api.js";
 import Cards from "./components/Cards/Cards.jsx";
 
-function BuscaItens(){
+function TodosItens(){
     const [values, setValues] = useState([]);
     useEffect(()=>{
         api.get("/protudos")
@@ -42,7 +42,7 @@ function BuscaItens(){
 
 }
 
-export default BuscaItens;
+export default TodosItens;
 
 
 // export default function BuscaItens(){
