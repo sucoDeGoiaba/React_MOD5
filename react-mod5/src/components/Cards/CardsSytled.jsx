@@ -9,6 +9,7 @@ margin: 5px;
 padding; 5px;
 display: felx;
 flex-direction: column;
+background-color: #C1C8FF;
 justify-content: space-evenly;
 align-items: center;
 p{
