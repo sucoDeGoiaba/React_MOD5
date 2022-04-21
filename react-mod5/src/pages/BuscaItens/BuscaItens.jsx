@@ -22,7 +22,7 @@ function BuscaItens(){
             {values.map((produto)=>{
                 return(
                     <Cards
-                    Nome do Item={produto.nomeProd}
+                    NomeDoItem={produto.nomeProd}
                     ID={produto.id}
                     Tipo={produto.tipo}
                     Quantidade={produto.quantidade}
