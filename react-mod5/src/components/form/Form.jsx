@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { api } from "../../services/api.js";
 import Input from "../input/Input.jsx";
-import DeletaProduto from "../pages/DeletaProduto.jsx";
+import DeletaProduto from "../../pages/DeletaProduto.jsx";
 
 export default function Form() {
   const [prodInfo, setProdInfo] = useState({});
