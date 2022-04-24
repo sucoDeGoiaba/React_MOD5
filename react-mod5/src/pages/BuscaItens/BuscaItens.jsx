@@ -18,11 +18,7 @@ export default function BuscaItens(){
     }, []);
 
     return(
-        <Container>
-            <div>
-
-            </div>
-
-        </Container>
+        <Container/>
+          
     )
 }

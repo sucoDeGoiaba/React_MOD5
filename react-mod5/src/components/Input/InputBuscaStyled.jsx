@@ -7,7 +7,7 @@ flex-direction:column;
 justify-content: space-around;
 `;
 
-export const InputBusca = styled.input
+export const InputBuscaStyled = styled.input
 `
 width: 80%;
 padding: 10px 20px;

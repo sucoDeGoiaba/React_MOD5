@@ -1,5 +1,5 @@
 import React from "react";
-import {Container} from "./CardsStyled.jsx";
+import {Container} from "./CardsSytled.jsx";
 
 export default function Cards({NomeDoItem, ID, Tipo, Quantidade, Preço}){
     return(
