@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Botao } from "../Button/ButtonStyled.jsx";
 
 function Botao ({click, nome}){
     return (
@@ -8,3 +9,5 @@ function Botao ({click, nome}){
         </div>
     )
 }
+
+export default Botao;

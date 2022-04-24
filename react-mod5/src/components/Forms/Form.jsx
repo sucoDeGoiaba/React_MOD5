@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {api} from "../../services/api.js";
 import InputBusca from "../Input/InputBusca.jsx";
+import { Botao } from "../Button/ButtonStyled.jsx";
 
 export default function Form (){
     const [prodInfo, setProdInfo] = useState({});
@@ -16,7 +17,7 @@ export default function Form (){
     return(
         <form onSubmit={submit}>
             <InputBusca labelName="id:" name="id" id="id" onChange={onChange}/>
-            <button type="submit">Buscar</button>
+            <Botao type="submit">Buscar</Botao>
         </form>
     )
 }
