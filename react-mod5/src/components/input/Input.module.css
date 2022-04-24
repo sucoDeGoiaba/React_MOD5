@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.containerInput {  
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.containerInput > input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 16%);
+}
+
+.containerInput > label {
+    width: fit-content;
+}
+

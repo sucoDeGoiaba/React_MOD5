@@ -1,7 +1,8 @@
-import Form from "./components/form/Form";
+import AddProd from "./pages/addProduto/AddProd";
+
 function App() {
   return (
-    <Form/>
+   <AddProd/>
 
   );
 }

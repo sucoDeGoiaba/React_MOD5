@@ -1,0 +1,10 @@
+.containerForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.diagramacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
