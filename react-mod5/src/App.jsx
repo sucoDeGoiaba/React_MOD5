@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 // import Footer from "./components/Footer/Footer.jsx";
 import BuscaItens from "./pages/BuscaItens/TodosItens.jsx";
 import MostraProduto from "./pages/BuscaItens/TodosItens.jsx";
+import Consulta from "./pages/Consultar/Consulta.jsx";
 
 
 
@@ -11,7 +12,16 @@ function App() {
   return (
   
   <div>
-    <MostraProduto/>
+    <Router>
+        {/* <Header /> */}
+          <MostraProduto/>
+        <Routes>
+          {/* <Route path="/" element={<Home />} />
+          <Route path="/contato" element={<Contato />} /> */}
+          <Route path="/consulta/:id" element={<Consulta/>} />
+          {/* <Route path="*" element={<PaginaDeErro />} /> */}
+        </Routes>
+      </Router>
   </div>
  
     
