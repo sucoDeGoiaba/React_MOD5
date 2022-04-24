@@ -16,5 +16,5 @@ export default function Consulta() {
     //         .catch((erro) => console.log(erro))
     // }, []);
 
-    return <Form/>
+    return <Form />
 }

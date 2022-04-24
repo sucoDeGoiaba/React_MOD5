@@ -1,43 +1,39 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 // import {useParams} from "react-router-dom";
-import {api} from "../../services/api.js";
+import { api } from "../../services/api.js";
 import Cards from "../../components/Cards/Cards.jsx";
 import InputBusca from "../../components/Input/InputBusca.jsx";
 
-export default function MostraProduto(){
-    // const {id} = useParams()
+export default function MostraProduto() {
     const [produto, setProduto] = useState([]);
-    
-        // api.get("/produto");
-        // const [values, setValues] = useState([]);
-    useEffect(()=>{
+
+
+    useEffect(() => {
         api.get("/produtos")
-        .then((response)=>{
-            setProduto(response.data.estoque);
-            console.log("produto",produto);
-        })
-        .catch((erro)=> console.log(erro));
+            .then((response) => {
+                setProduto(response.data.estoque);
+                console.log("produto", produto);
+            })
+            .catch((erro) => console.log(erro));
     });
-    
-    return(
+
+    return (
         <div>
             <div>
-                 <InputBusca/>
+                <InputBusca />
             </div>
-                {produto.map((produto)=>{
-                        return(
-                            <Cards
-                            NomeDoItem={produto.nomeProd}
-                            ID={produto.id}
-                            Tipo={produto.tipo}
-                            Quantidade={produto.quantidade}
-                            Preço={produto.preco}
-                            />
-                        );
-                    })}
-            {/* <div style = {{display: "grid"}}>
-            </div> */}
-        
-    </div>
+            {produto.map((produto) => {
+                return (
+                    <Cards
+                        NomeDoItem={produto.nomeProd}
+                        ID={produto.id}
+                        Tipo={produto.tipo}
+                        Quantidade={produto.quantidade}
+                        Preço={produto.preco}
+                    />
+                );
+            })}
+
+        </div>
     )
 }

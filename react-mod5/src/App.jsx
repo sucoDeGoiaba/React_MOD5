@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Header from "./components/Header/Header.jsx";
 // import Footer from "./components/Footer/Footer.jsx";
 import BuscaItens from "./pages/BuscaItens/TodosItens.jsx";
@@ -10,21 +10,21 @@ import Consulta from "./pages/Consultar/Consulta.jsx";
 
 function App() {
   return (
-  
-  <div>
-    <Router>
+
+    <div>
+      <Router>
         {/* <Header /> */}
-          <MostraProduto/>
+        <MostraProduto />
         <Routes>
           {/* <Route path="/" element={<Home />} />
           <Route path="/contato" element={<Contato />} /> */}
-          <Route path="/consulta/:id" element={<Consulta/>} />
+          <Route path="/consulta/:id" element={<Consulta />} />
           {/* <Route path="*" element={<PaginaDeErro />} /> */}
         </Routes>
       </Router>
-  </div>
- 
-    
+    </div>
+
+
   );
 }
 
