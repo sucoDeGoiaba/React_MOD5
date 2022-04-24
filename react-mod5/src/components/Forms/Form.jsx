@@ -15,7 +15,8 @@ export default function Form (){
 
     return(
         <form onSubmit={submit}>
-            <InputBusca 
+            <InputBusca labelName="id:" name="id" id="id" onChange={onChange}/>
+            <button type="submit">Buscar</button>
         </form>
     )
 }
