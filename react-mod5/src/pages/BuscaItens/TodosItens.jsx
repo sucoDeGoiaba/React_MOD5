@@ -1,69 +1,105 @@
 import {useState, useEffect} from "react";
+import {useParams} from "react-router-dom";
 import api from "../services/Api.js";
 import Cards from "./components/Cards/Cards.jsx";
+import InputBusca from "../../components/Input/InputBusca.jsx";
 
-function TodosItens(){
-    const [values, setValues] = useState([]);
-    useEffect(()=>{
-        api.get("/protudos")
-        .then((response)=>{
-            setValues(response.data.estoque);
-            console.log("values",values);
-        })
-        .catch((erro)=> console.log(erro));
-    });
-
+function MostraProduto(){
+    const {id} = useParams()
+    const [produto, setProduto] = useState({});
+    function handleGet(){
+        api.get("/produto");
+    }
     return(
-    <div>
         <div>
-            {/* lupa */}
-        </div>
-        <div style = {{display: "grid"}}>
-            {values.map((produto)=>{
+            <div>
                 return(
-                    <Cards
-                    NomeDoItem={produto.nomeProd}
-                    ID={produto.id}
-                    Tipo={produto.tipo}
-                    Quantidade={produto.quantidade}
-                    Preço={produto.preco}
-                    />
-                );
-            })}
-        </div>
-
-        <div>
-            {/* lateral */}
-        </div>
-
+                   <div>
+                        <label htmlFor={id}>{labelName}</label>
+                        <input type="text" name={name} id={id} onChange={onChange} required />
+                   </div> 
+                )
+            </div>
+            <div style = {{display: "grid"}}>
+                {values.map((produto)=>{
+                        return(
+                            <Cards
+                            NomeDoItem={produto.nomeProd}
+                            ID={produto.id}
+                            Tipo={produto.tipo}
+                            Quantidade={produto.quantidade}
+                            Preço={produto.preco}
+                            />
+                        );
+                    })}
+            </div>
+        
     </div>
-
     )
-
 }
 
-export default TodosItens;
-
-
-// export default function BuscaItens(){
-//     const [produto, setProduto]  = useState([]);
-//     const navigate = useNavigate();
-//     const {id} = useParams();
-    
+// function TodosItens(){
+//     const [values, setValues] = useState([]);
 //     useEffect(()=>{
-//         Api.get(`/produto`)
+//         api.get("/protudos")
 //         .then((response)=>{
-//             setProduto(response.data.estoque[0]);
+//             setValues(response.data.estoque);
+//             console.log("values",values);
 //         })
-//         .catch((erro)=> console.log(erro))
-//     }, []);
+//         .catch((erro)=> console.log(erro));
+//     });
 
 //     return(
-//         <Container>
-//             <div>
+//     <div>
+//         <div>
+//             {/* lupa */}
+//         </div>
+//         <div style = {{display: "grid"}}>
+//             {values.map((produto)=>{
+//                 return(
+//                     <Cards
+//                     NomeDoItem={produto.nomeProd}
+//                     ID={produto.id}
+//                     Tipo={produto.tipo}
+//                     Quantidade={produto.quantidade}
+//                     Preço={produto.preco}
+//                     />
+//                 );
+//             })}
+//         </div>
 
-//             </div>
+//         <div>
+//             {/* lateral */}
+//         </div>
 
-//         </Container>
+//     </div>
+
 //     )
+
 // }
+
+// export default TodosItens;
+
+
+// // export default function BuscaItens(){
+// //     const [produto, setProduto]  = useState([]);
+// //     const navigate = useNavigate();
+// //     const {id} = useParams();
+    
+// //     useEffect(()=>{
+// //         Api.get(`/produto`)
+// //         .then((response)=>{
+// //             setProduto(response.data.estoque[0]);
+// //         })
+// //         .catch((erro)=> console.log(erro))
+// //     }, []);
+
+// //     return(
+// //         <Container>
+// //             <div>
+
+// //             </div>
+
+// //         </Container>
+// //     )
+// // }
