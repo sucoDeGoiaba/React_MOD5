@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerBusca, InputBusca } from "./InputBuscaStyled.jsx";
+import { InputBusca } from "./InputBuscaStyled.jsx";
 
 export default function InputBusca({onChange, labelName, name, id}){
     return(
