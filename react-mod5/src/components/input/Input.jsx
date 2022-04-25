@@ -1,11 +1,9 @@
-import styled from './Input.module.css'
-
-export default function Input ({onChange, labelName, name, id}){
-    return(
-        <fieldset className={styled.containerInput}>
+export default function Input({ onChange, labelName, name, id, value }) {
+    return (
+        <>
             <label htmlFor={id}>{labelName}</label>
-            <input type="text" name={name} id={id} onChange={onChange} required/>
-        </fieldset>
-        
+            <input value={value} type="text" name={name} id={id} onChange={onChange} required />
+        </>
+
     )
 }

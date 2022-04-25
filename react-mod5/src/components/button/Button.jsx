@@ -1,5 +1,13 @@
-import styled from './Button.module.css'
+import React from "react";
+import styled from "styled-components";
+import { Botao } from "./ButtonStyled.jsx";
 
-export default function Button(){
-    return <button className={styled.botao} type="submit">ADICIONAR</button>
+function Botao ({click, nome}){
+    return (
+        <div>
+            <Button onClick={click}>{nome}</Button>
+        </div>
+    )
 }
+
+export default Botao;

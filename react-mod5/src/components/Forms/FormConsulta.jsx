@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { api } from "../../services/api.js";
-import Input from "../Input/Input.jsx";
-import { Botao } from "../Button/ButtonStyled.jsx";
+import { api } from "../../services/Api.js";
+import Input from "../input/Input.jsx";
+import { Botao } from "../button/ButtonStyled.jsx";
 import { useParams } from "react-router-dom";
 export default function Form() {
     const [prodInfo, setProdInfo] = useState({})
