@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
-// import {useParams} from "react-router-dom";
-import { api } from "../../services/api.js";
+import { api } from "../../services/Api.js";
 import Cards from "../../components/Cards/Cards.jsx";
-import InputBusca from "../../components/Input/InputBusca.jsx";
+import InputBusca from "../../components/input/InputBusca.jsx";
 
 export default function MostraProduto() {
     const [produto, setProduto] = useState([]);
-
 
     useEffect(() => {
         api.get("/produtos")
@@ -19,9 +17,9 @@ export default function MostraProduto() {
 
     return (
         <div>
-            <div>
+            {/* <div>
                 <InputBusca />
-            </div>
+            </div> */}
             {produto.map((produto) => {
                 return (
                     <Cards
@@ -33,7 +31,6 @@ export default function MostraProduto() {
                     />
                 );
             })}
-
         </div>
     )
 }
