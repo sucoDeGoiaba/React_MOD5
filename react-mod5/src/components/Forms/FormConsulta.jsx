@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { api } from "../../services/Api.js";
+import { api } from "../../services/api.js";
 import Input from "../input/Input.jsx";
 import { Botao } from "../button/ButtonStyled.jsx";
 import { useParams } from "react-router-dom";

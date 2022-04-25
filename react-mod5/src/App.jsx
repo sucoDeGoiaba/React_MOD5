@@ -1,41 +1,29 @@
-// <<<<<<< HEAD
-// import AddProd from "./pages/addProduto/AddProd";
-
-// function App() {
-//   return (
-//    <AddProd/>
-//   )
-// }
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Header from "./components/Header/Header.jsx";
-// import Footer from "./components/Footer/Footer.jsx";
-import BuscaItens from "./pages/BuscaItens/TodosItens.jsx";
-import MostraProduto from "./pages/BuscaItens/TodosItens.jsx";
+
 import Consulta from "./pages/Consultar/Consulta.jsx";
-
-
+import MostraProduto from "./components/listaDeItens/ListaDeItens.jsx";
+import AddProd from "./pages/addProduto/AddProd.jsx";
 
 function App() {
   return (
-
-    <div>
+    <>
+      {/* Header */}
       <Router>
-        {/* <Header /> */}
-        <MostraProduto />
+        <section>
+          {/* https://www.w3schools.com/css/css_overflow.asp */}
+          {/* https://www.codedaily.io/tutorials/Build-a-Reusable-Scroll-List-Component-with-Animated-scrollTo-in-React */}
+          <MostraProduto/>
+        </section>
         <Routes>
-          {/* <Route path="/" element={<Home />} />
-          <Route path="/contato" element={<Contato />} /> */}
-          <Route path="/consulta/:id" element={<Consulta />} />
-          {/* <Route path="*" element={<PaginaDeErro />} /> */}
+          <Route path="/"/>
+          <Route path="/adicionar" element={<main> <AddProd/> </main>}/>
+          <Route path="/consulta/:id" element={<main> <Consulta/> </main>} />
         </Routes>
       </Router>
-    </div>
-
-// >>>>>>> eca559734ec301d7e0c44af198557e68c53354bd
-
-  );
+      {/* Footer */}
+    </>
+  )
 }
 
 export default App;

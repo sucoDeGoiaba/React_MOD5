@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { api } from "../../services/Api.js";
+import { api } from "../../services/api.js";
 import Form from "../../components/Forms/FormConsulta.jsx";
 
 export default function Consulta() {
