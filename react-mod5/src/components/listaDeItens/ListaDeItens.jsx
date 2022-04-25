@@ -20,11 +20,11 @@ export default function MostraProduto() {
                 return (
                     <Cards
                         key={produto.id}
-                        NomeDoItem={produto.nomeProd}
-                        ID={produto.id}
-                        Tipo={produto.tipo}
-                        Quantidade={produto.quantidade}
-                        Preço={produto.preco}
+                        nomeDoItem={produto.nomeProd}
+                        id={produto.id}
+                        tipo={produto.tipo}
+                        quantidade={produto.quantidade}
+                        preco={produto.preco}
                     />
                 );
             })}

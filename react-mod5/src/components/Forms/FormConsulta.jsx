@@ -3,7 +3,7 @@ import { api } from "../../services/api.js";
 import Input from "../input/Input.jsx";
 import { Botao } from "../button/ButtonStyled.jsx";
 import { useParams } from "react-router-dom";
-export default function Form() {
+export default function Form({id}) {
     const [prodInfo, setProdInfo] = useState({})
 
     // Pega a info dos Inputs e passa um JSON para prodInfo, contendo nome e valor do Input para futuro envio
@@ -11,8 +11,6 @@ export default function Form() {
         setProdInfo({ ...prodInfo, [e.target.name]: e.target.value })
     }
 
-
-    const { id } = useParams();
     useEffect(() => {
         api.get("/id/" + id)
             .then((response) => {
