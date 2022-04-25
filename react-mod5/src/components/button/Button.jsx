@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Botao } from "../Button/ButtonStyled.jsx";
+import { Botao } from "./ButtonStyled.jsx";
 
-function Botao ({click, nome}){
+function BtnFeliz ({click, nome}){
     return (
         <div>
-            <Button onClick={click}>{nome}</Button>
+            <Botao onClick={click}>{nome}</Botao>
         </div>
     )
 }
