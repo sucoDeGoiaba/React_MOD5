@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { api } from "../../services/api.js"
-import Input from "../input/Input.jsx"
+import Input from "../input/Input2.jsx"
 import Button from "../button/button2.jsx"
 import styled from "./Form.module.css"
 

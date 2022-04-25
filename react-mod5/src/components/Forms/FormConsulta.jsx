@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { api } from "../../services/api.js";
-import Input from "../input/Input.jsx";
+import Input from "../input/Input2.jsx";
 import { Botao } from "../button/ButtonStyled.jsx";
 import { useParams } from "react-router-dom";
 export default function Form({id}) {
