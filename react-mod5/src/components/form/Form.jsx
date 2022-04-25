@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { api } from "../../services/api.js"
 import Input from "../input/Input.jsx"
-import Button from "../button/Button.jsx"
+import Button from "../button/button2.jsx"
 import styled from "./Form.module.css"
 
 export default function Form (){
