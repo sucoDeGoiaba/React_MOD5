@@ -13,8 +13,7 @@ export default function Form (){
     }
 
     // Envia as informações do produto para API
-    function submit(e){
-        e.preventDefault()
+    function submit(){
         api.post("/addProd", prodInfo)
     }
 
