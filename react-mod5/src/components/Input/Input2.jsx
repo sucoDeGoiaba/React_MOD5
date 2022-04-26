@@ -1,8 +1,10 @@
+import styled from './Input.module.css'
 export default function Input({ onChange, labelName, name, id, value }) {
     return (
         <>
-            <label htmlFor={id}>{labelName}</label>
+            <label className={styled.label} htmlFor={id}>{labelName}
             <input 
+                className={styled.input}
                 value={value} 
                 type="text" 
                 name={name} 
@@ -10,6 +12,8 @@ export default function Input({ onChange, labelName, name, id, value }) {
                 onChange={onChange} 
                 required 
             />
+            </label>
         </>
+
     )
 }

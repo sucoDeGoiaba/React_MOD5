@@ -11,4 +11,5 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 background-color: #F9F9F9;
+box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 10%);
 `

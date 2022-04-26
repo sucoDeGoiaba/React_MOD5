@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { api } from "../../services/api.js"
 import Input from "../Input/Input2.jsx"
-import Button from "../Button/button2.jsx"
+// import Button from "../Button/button2.jsx"
 import styled from "./Form.module.css"
 
 export default function Form (){
@@ -19,6 +19,9 @@ export default function Form (){
     }
 
     return(
+    <>
+    
+        <h1 className={styled.titulo}>Informações do produto</h1>
         <form onSubmit={submit} className={styled.containerForm}>
             <Input 
                 labelName="Nome do Produto:" 
@@ -51,7 +54,10 @@ export default function Form (){
                     onChange={onChange}
                 />
             </div>
-            <Button/>
+
+            <button className={styled.btn} type="submit">ADICIONAR</button>
+            {/* <Button/> */}
         </form>
+    </>
     )
 }

@@ -1,6 +1,7 @@
-import styled from "../../components/form/Form.module.css";
+import styledForm from "../../components/form/Form.module.css";
+import styledBtn from "./Consulta.module.css"
 import Input from "../../components/Input/Input2.jsx";
-
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { api } from "../../services/api.js"
@@ -8,7 +9,7 @@ import { api } from "../../services/api.js"
 export default function Consultar (){
     const [produto, setProduto] = useState([])
     const {id} = useParams()
-
+    const navigate = useNavigate()
     // Pega a info dos Inputs e passa um JSON para prodInfo, contendo nome e valor do Input para futuro envio
     function onChange(e){
         setProduto({...produto, [e.target.name] : e.target.value})
@@ -20,6 +21,8 @@ export default function Consultar (){
 
     function handleDelete() {
         api.delete(`/id/${id}`);
+        navigate('/')
+        
     }
 
     useEffect(()=>{
@@ -30,7 +33,7 @@ export default function Consultar (){
     }, [id])
 
     return(
-        <form className={styled.containerForm}>
+        <form className={styledForm.containerForm}>
             <Input 
                 value={produto.nomeProd || produto.nome}
                 labelName="Nome do Produto:" 
@@ -47,7 +50,7 @@ export default function Consultar (){
                 onChange={onChange}
             />
 
-            <div className={styled.diagramacao}>
+            <div className={styledForm.diagramacao}>
                 <Input 
                     value={produto.quantidade}
                     labelName="Quantidade:" 
@@ -64,9 +67,9 @@ export default function Consultar (){
                 />
             </div>
 
-            <fieldset>
-                <button type="submit" onClick={handleEdit}>Editar</button>
-                <button type="submit" onClick={handleDelete}>Deletar</button>
+            <fieldset className={styledBtn.fieldset}>
+                <button className={styledBtn.btnEditar} type="submit" onClick={handleEdit}>Editar</button>
+                <button className={styledBtn.btnExcluir} type="submit" onClick={handleDelete}>Deletar</button>
             </fieldset>
         </form>
     )

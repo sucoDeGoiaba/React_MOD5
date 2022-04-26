@@ -1,22 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* font-family: 'Roboto', sans-serif; */
 
-.containerInput {  
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    border: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-.containerInput > input {
+.input {  
     padding: 10px;
+    border: 0;
+    font-family: 'Roboto', sans-serif; 
     border-radius: 10px;
     border: 0px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 16%);
+    margin-bottom: 20px;
 }
 
-.containerInput > label {
-    width: fit-content;
+.label {
+    font-family: 'Roboto', sans-serif; 
+    display: flex;
+    flex-direction: column;
 }
-

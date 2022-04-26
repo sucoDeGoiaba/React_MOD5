@@ -29,4 +29,9 @@
     margin: 5px;
     border-radius: 20px;
     background-color: #CDD1D8;
+
+    display: flex;
+    flex-direction: column;
+
 }
+

@@ -4,3 +4,8 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.tirandoUnderline {
+    text-decoration: none;
+    color: #000;
+}
