@@ -2,18 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.li
 `
-width: 400px;
-heigth: 250px;
-border-radius: 15px;
-margin: 5px;
-padding; 5px;
-display: felx;
+width: 300px;
+heigth: 300px;
+border-radius: 10px;
+padding: 10px;
+margin: 10px;
+display: flex;
 flex-direction: column;
-background-color: #C1C8FF;
-justify-content: space-evenly;
-align-items: center;
-p{
-    font-family: "Comic Sans MS", Comic Sans, cursive;
-}
+background-color: #F9F9F9;
 `
 
+// p{
+//     font-family: "Comic Sans MS", Comic Sans, cursive;
+// }

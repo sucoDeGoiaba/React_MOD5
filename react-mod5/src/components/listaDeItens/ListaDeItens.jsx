@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { api } from "../../services/api.js";
 import Cards from "../Cards/Cards.jsx";
 
+import styled from "./ListaDeItens.module.css"
+
 export default function MostraProduto() {
     const [produto, setProduto] = useState([]);
 
@@ -15,12 +17,12 @@ export default function MostraProduto() {
     });
 
     return (
-        <ul>
+        <ul className={styled.lista}>
             {produto.map((produto) => {
                 return (
                     <Cards
                         key={produto.id}
-                        nomeDoItem={produto.nomeProd}
+                        nomeDoItem={produto.nome}
                         id={produto.id}
                         tipo={produto.tipo}
                         quantidade={produto.quantidade}

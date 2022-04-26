@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.listagemItens {
+    height: 85vh;
+    width: fit-content;
+    background-color: #CDD1D8;
+    border-radius: 20px;
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
