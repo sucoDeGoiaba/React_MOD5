@@ -32,7 +32,7 @@ export default function Consultar (){
     return(
         <form className={styled.containerForm}>
             <Input 
-                value={produto.nomeProd}
+                value={produto.nomeProd || produto.nome}
                 labelName="Nome do Produto:" 
                 name="nomeProd" 
                 id="nomeProd" 
