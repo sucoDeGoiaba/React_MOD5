@@ -1,5 +1,5 @@
 import styled from "../../components/form/Form.module.css";
-import Input from "../../components/input/Input2.jsx";
+import Input from "../../components/Input/Input2.jsx";
 
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
