@@ -12,12 +12,21 @@
 
 .listagemItens {
     height: 85vh;
-    width: fit-content;
+    width: 20%;
     background-color: #CDD1D8;
     border-radius: 20px;
     margin: 5px;
-
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+}
+
+.testando {
+    height: 85vh;   
+    width: 80%;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #CDD1D8;
 }

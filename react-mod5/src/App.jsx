@@ -23,8 +23,8 @@ function App() {
         </section>
         <Routes>
           <Route path="/"/>
-          <Route path="/adicionar" element={<section> <AddProd/> </section>}/>
-          <Route path="/consulta/:id" element={<section> <Consulta/> </section>} />
+          <Route path="/adicionar" element={<section className={styled.testando}> <AddProd/> </section>}/>
+          <Route path="/consulta/:id" element={<section className={styled.testando}> <Consulta/> </section>} />
         </Routes>
       </Router>
      
