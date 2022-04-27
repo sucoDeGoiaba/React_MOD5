@@ -1,10 +1,29 @@
-# Getting Started with Create React App
+# Shark Stock
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi iniciado [Repositório Shark Stock](https://github.com/sucoDeGoiaba/React_MOD5/tree/master/react-mod5).
 
-## Available Scripts
+## Descrição do Projeto
 
-In the project directory, you can run:
+Este projeto foi realizado para fins didáticos como instrumento de avaliação final do Módulo 5 do curso WebDev Full Stack da [Resilia Educação](https://www.resilia.com.br/)! Sendo finalizado em Abril de 2022!
+
+O projeto foi realizado em equipe com a proposta de desenvolver o front end em React da API construída como trabalho final do Módulo 4 (que também foi realizado em equipe). Em conjunto escolhemos o tema Loja de Infomática, e optamos pela entidade [Estoque](https://github.com/sucoDeGoiaba/apiMOD4), para utilizar esta entidade foi feito o deploy da entidade [Estoque](https://apimod4-infoshark.herokuapp.com/produtos), no site [Heroku](https://www.heroku.com). 
+
+Fazia parte obrigatório no desenvolvimento deste os seguinte critérios:
+
+    I - Utilizar endpoints da API que foi criada no Módulo 4 com [Node.JS](https://nodejs.org/en/), com a framework [Express](https://expressjs.com/) e como banco de dados o [SQLite](https://www.sqlite.org/index.html);
+    II - Utilizar a biblioteca [react-router-dom](https://www.npmjs.com/package/react-router-dom);
+    III - Tenha uma animação [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS);
+    IV - Contenha as funcionalidades básicas do CRUD:
+        a. Página para listar os cadastros com opção de busca;
+        b. Página para incluir um novo registro;
+        c. Página para editar os cadastros;
+        d. Opção de excluir itens cadastrados.
+
+
+## Status do Projeto
+
+![Done](./public/img/Done-bro.png)
+Ilustrações de trabalho por Storyset (https://storyset.com/illustration/done/bro) 
 
 ### `npm start`
 
