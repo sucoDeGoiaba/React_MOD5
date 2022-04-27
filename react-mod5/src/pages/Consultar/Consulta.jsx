@@ -34,44 +34,47 @@ export default function Consultar (){
     }, [id])
 
     return(
-        <form className={styledForm.containerForm}>
-            <Input 
-                value={produto.nomeProd || produto.nome}
-                labelName="Nome do Produto:" 
-                name="nomeProd" 
-                id="nomeProd" 
-                onChange={onChange}
-            />
-
-            <Input 
-                value={produto.tipo}
-                labelName="Tipo:" 
-                name="tipo" 
-                id="tipo" 
-                onChange={onChange}
-            />
-
-            <div className={styledForm.diagramacao}>
+        <>
+            <h1 className={styledForm.titulo}>Informações do produto:</h1>
+            <form className={styledForm.containerForm}>
                 <Input 
-                    value={produto.quantidade}
-                    labelName="Quantidade:" 
-                    name="quantidade" 
-                    id="quantidade" 
+                    value={produto.nomeProd || produto.nome}
+                    labelName="Nome do Produto:" 
+                    name="nomeProd" 
+                    id="nomeProd" 
                     onChange={onChange}
                 />
+
                 <Input 
-                    value={produto.preco}
-                    labelName="Preço:" 
-                    name="preco" 
-                    id="preco" 
+                    value={produto.tipo}
+                    labelName="Tipo:" 
+                    name="tipo" 
+                    id="tipo" 
                     onChange={onChange}
                 />
-            </div>
 
-            <fieldset className={styledBtn.fieldset}>
-                <button className={styledBtn.btnEditar} type="submit" onClick={handleEdit}>Editar</button>
-                <button className={styledBtn.btnExcluir} type="submit" onClick={handleDelete}>Deletar</button>
-            </fieldset>
-        </form>
+                <div className={styledForm.diagramacao}>
+                    <Input 
+                        value={produto.quantidade}
+                        labelName="Quantidade:" 
+                        name="quantidade" 
+                        id="quantidade" 
+                        onChange={onChange}
+                    />
+                    <Input 
+                        value={produto.preco}
+                        labelName="Preço:" 
+                        name="preco" 
+                        id="preco" 
+                        onChange={onChange}
+                    />
+                </div>
+
+                <fieldset className={styledBtn.fieldset}>
+                    <button className={styledBtn.btnEditar} type="submit" onClick={handleEdit}>EDITAR</button>
+                    <button className={styledBtn.btnExcluir} type="submit" onClick={handleDelete}>DELETAR</button>
+                </fieldset>
+            </form>
+        </>
     )
 }

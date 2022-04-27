@@ -21,7 +21,7 @@ export default function Form (){
     return(
     <>
     
-        <h1 className={styled.titulo}>Informações do produto</h1>
+        <h1 className={styled.titulo}>Adicione um produto:</h1>
         <form onSubmit={submit} className={styled.containerForm}>
             <Input 
                 labelName="Nome do Produto:" 
