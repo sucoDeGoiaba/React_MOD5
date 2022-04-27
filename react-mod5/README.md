@@ -19,71 +19,106 @@ Fazia parte obrigatório no desenvolvimento deste os seguinte critérios:
         c. Página para editar os cadastros;
         d. Opção de excluir itens cadastrados.
 
+##  Pré-requisitos e como rodar a aplicação
+
+  Para que nossa aplicação funcione adequadamente é necessário que usuário tenha instalado em seu dispositivo um browser de internet atualizado, e acessar com nesse link ??
+
+## 🛠 Teconologias utilizadas
+
+Para este projeto utilizado as seguintes ferramentas:
+
+  
+- [VS Code](https://code.visualstudio.com/)
+
+- [JavaScript](https://www.javascript.com/)
+
+- [CSS](https://www.w3.org/Style/CSS/#specs)
+
+- [React](https://pt-br.reactjs.org/)
+
+- [GitHub](https://github.com/)
+
+- [Heroku](https://www.heroku.com)
+
+- [API-Estoque](https://apimod4-infoshark.herokuapp.com/produtos)
+
+- [WhatsApp](https://web.whatsapp.com/)
+
+- [Discord](https://discord.com/)
+
+- [Adobe Color](https://color.adobe.com/pt/create/color-wheel)
+
+- [Canva](https://www.canva.com/)
+
+
+## Autores
+
+  
+
+![Fabiano B. de Oliveira] (./public/img/fabiano.jpg)
+
+![Linkedin](https://www.linkedin.com/in/fabiano-barros-de-oliveira-3aa12b82/)
+
+![GitHub](https://github.com/fabianobarroli)
+
+  
+
+![Felipe Paes de Melo] (./public/img/felipe.jpg)
+
+![Linkedin](https://www.linkedin.com/in/flppaesdemelo/)
+
+![GitHub](https://github.com/sucoDeGoiaba)
+
+  
+
+![Vivian Caroline Miranda] (./public/img/carol.jpg)
+
+![Linkedin](https://www.linkedin.com/in/viviancaroline/)
+
+![GitHub](https://github.com/viviancarolinemiranda)
+
+  
+
+![Patrick Almeida] (./public/img/patrick.jpg)
+
+![Linkedin](https://www.linkedin.com/in/patrick-almeida-01b47422a/)
+
+![GitHub](https://github.com/patrickovalmeida)
+
+  
+<!-- 
+  <table>
+  <tr>
+    <td align="center"><a href="https://github.com/andre21cavalcante"><img src="https://user-images.githubusercontent.com/94079921/148246740-2bb317b6-59bb-4700-b337-456bb37bd501.jpeg" style="border-radius: 50%;" width="100px;" alt=""/><br /><sub><b>André Cavalcante</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/sucoDeGoiaba"><img src="https://user-images.githubusercontent.com/94079921/148248330-bff348d3-826a-41d5-aa35-ea4371e1f060.jpeg" style="border-radius: 50%;"  width="100px;" alt=""/><br /><sub><b>Felipe Santos</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/igorcampos20016"><img src="https://user-images.githubusercontent.com/94079921/148274992-c4302565-b875-4a5c-83d2-48ad53b4042d.jpeg" style="border-radius: 50%;" width="100px;" alt=""/><br /><sub><b>Igor Campos</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/karinacristo"><img src="https://user-images.githubusercontent.com/94079921/148248034-0faa538f-631d-438d-afa8-3cf1155fb625.jpeg" style="border-radius: 50%;"  width="100px;" alt=""/><br /><sub><b>Karina Cristo</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Nathalia02-alves"><img src= "https://user-images.githubusercontent.com/94079921/148247644-7d7e10dd-ceb6-45d1-b449-f07ac52a515e.jpeg" style="border-radius: 50%;"  width="100px;" alt=""/><br /><sub><b>Nathália Alves</b></sub></a><br /></td>
+  </tr>
+</table> -->
+
+## Licença
+
+  
+![Lincense MIT](./public/img/mitlicense.jpg)
+
+  
+
+Direitos autorais
+
+  
+
+A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para negociar no Software sem restrições, incluindo sem limitação os direitos de uso, cópia, modificação, fusão, publicação, distribuição, sublicença e/ou venda cópias do Software, e para permitir que as pessoas a quem o Software seja fornecido para fazê-lo, sujeitos às seguintes condições:
+
+  
+
+O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+
+  
+
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO PARA UM PROPÓSITO ESPECÍFICO E NÃO INFRINGEMENT. EM NENHUM CASO OS AUTORES OU DETENTORES DE DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRAS RESPONSABILIDADES, SEJA EM UMA AÇÃO DE CONTRATO, DELITO OU DE OUTRA FORMA, DECORRENTES, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.
 
 ## Status do Projeto
 
 ![Done](./public/img/Done-bro.png)
-Ilustrações de trabalho por Storyset (https://storyset.com/illustration/done/bro) 
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ilustrações de trabalho por Storyset (https://storyset.com/illustration/done/bro)
