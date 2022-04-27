@@ -15,7 +15,8 @@ export default function Consultar (){
         setProduto({...produto, [e.target.name] : e.target.value})
     }
 
-    function handleEdit(){
+    function handleEdit(e){
+        e.preventDefault()
         api.put(`/produtos/id/${id}`, produto)
     }
 
