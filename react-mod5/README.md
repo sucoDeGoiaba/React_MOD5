@@ -65,7 +65,7 @@ Fabiano Barros de Oliveira
 
 Felipe Paes de Melo
 
-![Felipe Paes de Melo](./public/img/felipe.jpg)
+![Felipe Paes de Melo](./public/img/felipe.jpeg)
 
 [Linkedin](https://www.linkedin.com/in/flppaesdemelo/)
 
