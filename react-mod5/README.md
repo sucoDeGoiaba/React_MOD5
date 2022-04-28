@@ -54,8 +54,7 @@ Para este projeto utilizado as seguintes ferramentas:
 ## Autores
 
   
-
-![Fabiano B. de Oliveira] (./public/img/fabiano.jpg)
+Fabiano B. de Oliveira (./public/img/fabiano.jpg)
 
 ![Linkedin](https://www.linkedin.com/in/fabiano-barros-de-oliveira-3aa12b82/)
 
