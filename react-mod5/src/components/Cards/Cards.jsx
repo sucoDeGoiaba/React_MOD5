@@ -1,25 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container } from "./CardsSytled.jsx";
 import { Link } from "react-router-dom";
 
 import styled from "./Card.module.css";
 
-export default function Cards({
-  nomeDoItem,
-  id,
-  tipo,
-  quantidade,
-  preco,
-  isLoading,
-  setLoad,
-}) {
-  //   const [loading, setLoading] = useState(true);
-
-  //   useEffect(() => {
-  //     setLoad(setLoading);
-  //     isLoading(loading);
-  //   });
-
+export default function Cards({ nomeDoItem, id, tipo, quantidade, preco }) {
   return (
     <div>
       <Link className={styled.tirandoUnderline} to={`/consulta/${id}`}>
