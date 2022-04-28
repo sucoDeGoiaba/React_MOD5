@@ -71,8 +71,8 @@ Felipe Paes de Melo
 
 [GitHub](https://github.com/sucoDeGoiaba)
 
- 
-  
+
+
 Vivian Caroline Miranda
 
 ![Vivian Caroline Miranda](./public/img/carol.jpg)
@@ -116,4 +116,5 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 ## Status do Projeto
 
 ![Done](./public/img/Done-bro.png)
+
 Ilustrações de trabalho por Storyset (https://storyset.com/illustration/done/bro)
