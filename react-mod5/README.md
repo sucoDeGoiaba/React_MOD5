@@ -1,4 +1,4 @@
-# Shark Stock
+# [Shark Stock](./public/favicon.ico) Shark Stock
 
 Este projeto foi iniciado [Repositório Shark Stock](https://github.com/sucoDeGoiaba/React_MOD5/tree/master/react-mod5).
 
