@@ -11,23 +11,28 @@ export default function Cards({
   quantidade,
   preco,
   isLoading,
+  setLoad,
 }) {
-  const [loading, setLoading] = useState(true);
+  //   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    isLoading(loading);
-  });
+  //   useEffect(() => {
+  //     setLoad(setLoading);
+  //     isLoading(loading);
+  //   });
+
   return (
-    <Link className={styled.tirandoUnderline} to={`/consulta/${id}`}>
-      <Container isLoading={(value) => setLoading(value)}>
-        <div className={styled.diagramacao}>
-          <p>{nomeDoItem}</p> <p>ID: {id}</p>
-        </div>
-        <p>Tipo: {tipo}</p>
-        <div className={styled.diagramacao}>
-          <p>R${preco}</p> <p>Un.: {quantidade}</p>
-        </div>
-      </Container>
-    </Link>
+    <div>
+      <Link className={styled.tirandoUnderline} to={`/consulta/${id}`}>
+        <Container>
+          <div className={styled.diagramacao}>
+            <p>{nomeDoItem}</p> <p>ID: {id}</p>
+          </div>
+          <p>Tipo: {tipo}</p>
+          <div className={styled.diagramacao}>
+            <p>R${preco}</p> <p>Un.: {quantidade}</p>
+          </div>
+        </Container>
+      </Link>
+    </div>
   );
 }

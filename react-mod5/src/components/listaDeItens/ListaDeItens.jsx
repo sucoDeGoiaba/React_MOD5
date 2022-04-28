@@ -14,36 +14,38 @@ export default function MostraProduto() {
       .get("/produtos")
       .then((response) => {
         setProduto(response.data.estoque);
-        console.log("produto", produto);
+        setLoading(false);
       })
       .catch((erro) => console.log(erro));
-  });
-
-  return (
-    <ul className={styled.lista}>
-      {produto.map((produto) => {
-        return (
-          <div>
-            {loading && (
-              <>
-                <MyLoader />
-                <MyLoader />
-                <MyLoader />
-                <MyLoader />
-              </>
-            )}
-            <Cards
-              key={produto.id}
-              nomeDoItem={produto.nome}
-              id={produto.id}
-              tipo={produto.tipo}
-              quantidade={produto.quantidade}
-              preco={produto.preco}
-              isLoading={(value) => setLoading(value)}
-            />
-          </div>
-        );
-      })}
-    </ul>
-  );
+  }, [produto]);
+  if (loading) {
+    return (
+      <>
+        <MyLoader />
+        <MyLoader />
+        <MyLoader />
+        <MyLoader />
+      </>
+    );
+  } else {
+    return (
+      <ul className={styled.lista}>
+        {produto.map((produto) => {
+          return (
+            <div key={produto.id}>
+              <Cards
+                nomeDoItem={produto.nome}
+                id={produto.id}
+                tipo={produto.tipo}
+                quantidade={produto.quantidade}
+                preco={produto.preco}
+                //   isLoading={(value) => setLoading(value)}
+                //   setLoad={true}
+              />
+            </div>
+          );
+        })}
+      </ul>
+    );
+  }
 }
