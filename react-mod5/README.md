@@ -10,9 +10,9 @@ O projeto foi realizado em equipe com a proposta de desenvolver o front end em R
 
 Fazia parte obrigatório no desenvolvimento deste os seguinte critérios:
 
-    I - Utilizar endpoints da API que foi criada no Módulo 4 com [Node.JS](https://nodejs.org/en/), com a framework [Express](https://expressjs.com/) e como banco de dados o [SQLite](https://www.sqlite.org/index.html);
-    II - Utilizar a biblioteca [react-router-dom](https://www.npmjs.com/package/react-router-dom);
-    III - Tenha uma animação [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS);
+    I - Utilizar endpoints da API que foi criada no Módulo 4 com Node.JS, com a framework Express e como banco de dados o SQLite;
+    II - Utilizar a biblioteca react-router-dom;
+    III - Tenha uma animação CSS;
     IV - Contenha as funcionalidades básicas do CRUD:
         a. Página para listar os cadastros com opção de busca;
         b. Página para incluir um novo registro;
