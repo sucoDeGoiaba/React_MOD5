@@ -1,6 +1,6 @@
 # ![Shark Stock](./public/img/logo.png) Shark Stock
 
-Este projeto foi iniciado [Repositório Shark Stock](https://github.com/sucoDeGoiaba/React_MOD5/tree/master/react-mod5).
+Este projeto foi iniciado no [Repositório Shark Stock](https://github.com/sucoDeGoiaba/React_MOD5/tree/master/react-mod5).
 
 ## Descrição do Projeto
 
