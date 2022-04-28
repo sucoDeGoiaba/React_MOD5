@@ -1,35 +1,53 @@
 import { useState, useEffect } from "react";
 import { api } from "../../services/api.js";
 import Cards from "../Cards/Cards.jsx";
+import MyLoader from "../Loader/Loader.jsx";
 
-import styled from "./ListaDeItens.module.css"
+import styled from "./ListaDeItens.module.css";
 
 export default function MostraProduto() {
-    const [produto, setProduto] = useState([]);
+  const [produto, setProduto] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        api.get("/produtos")
-            .then((response) => {
-                setProduto(response.data.estoque);
-                console.log("produto", produto);
-            })
-            .catch((erro) => console.log(erro));
-    });
-
+  useEffect(() => {
+    setTimeout(() => {
+      api
+        .get("/produtos")
+        .then((response) => {
+          setProduto(response.data.estoque);
+          setLoading(false);
+        })
+        .catch((erro) => console.log(erro));
+    }, "2500");
+  }, [produto]);
+  if (loading) {
     return (
-        <ul className={styled.lista}>
-            {produto.map((produto) => {
-                return (
-                    <Cards
-                        key={produto.id}
-                        nomeDoItem={produto.nome}
-                        id={produto.id}
-                        tipo={produto.tipo}
-                        quantidade={produto.quantidade}
-                        preco={produto.preco}
-                    />
-                );
-            })}
-        </ul>
-    )
+      <>
+        <MyLoader />
+        <MyLoader />
+        <MyLoader />
+        <MyLoader />
+      </>
+    );
+  } else {
+    return (
+      <ul className={styled.lista}>
+        {produto.map((produto) => {
+          return (
+            <div key={produto.id}>
+              <Cards
+                nomeDoItem={produto.nome}
+                id={produto.id}
+                tipo={produto.tipo}
+                quantidade={produto.quantidade}
+                preco={produto.preco}
+                //   isLoading={(value) => setLoading(value)}
+                //   setLoad={true}
+              />
+            </div>
+          );
+        })}
+      </ul>
+    );
+  }
 }
