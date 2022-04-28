@@ -10,13 +10,15 @@ export default function MostraProduto() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    api
-      .get("/produtos")
-      .then((response) => {
-        setProduto(response.data.estoque);
-        setLoading(false);
-      })
-      .catch((erro) => console.log(erro));
+    setTimeout(() => {
+      api
+        .get("/produtos")
+        .then((response) => {
+          setProduto(response.data.estoque);
+          setLoading(false);
+        })
+        .catch((erro) => console.log(erro));
+    }, "2500");
   }, [produto]);
   if (loading) {
     return (
