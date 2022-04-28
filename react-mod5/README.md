@@ -57,8 +57,8 @@ Fabiano Barros de Oliveira
 
 ![Fabiano B. de Oliveira](./public/img/fabiano.jpg)
 
-![Linkedin](https://www.linkedin.com/in/fabiano-barros-de-oliveira-3aa12b82/)
-![GitHub](https://github.com/fabianobarroli)
+[Linkedin](https://www.linkedin.com/in/fabiano-barros-de-oliveira-3aa12b82/)
+[GitHub](https://github.com/fabianobarroli)
 
 
 
