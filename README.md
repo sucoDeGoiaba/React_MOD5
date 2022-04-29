@@ -21,7 +21,7 @@ Fazia parte obrigatório no desenvolvimento deste os seguinte critérios:
 
 ##  Pré-requisitos e como rodar a aplicação
 
-  Para que nossa aplicação funcione adequadamente é necessário que usuário tenha instalado em seu dispositivo um browser de internet atualizado, e acessar com nesse link ??
+  Para que nossa aplicação funcione adequadamente é necessário que usuário tenha instalado em seu dispositivo um browser de internet atualizado, e acessar com nesse link [Deploy Shark Stok](https://626b4170596a6108980f015a--startling-griffin-da68bb.netlify.app/)
 
 ## 🛠 Teconologias utilizadas
 
@@ -46,7 +46,7 @@ Para este projeto utilizado as seguintes ferramentas:
 
 - [Discord](https://discord.com/)
 
-- [Adobe Color](https://color.adobe.com/pt/create/color-wheel)
+- [Adobe XD](https://www.adobe.com/br/products/xd.html)
 
 - [Canva](https://www.canva.com/)
 
